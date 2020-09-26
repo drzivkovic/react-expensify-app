@@ -1,7 +1,7 @@
-import { addExpense, editExpense, removeExpanse } from '../../actions/expenses';
+import { addExpense, editExpense, removeExpense } from '../../actions/expenses';
 
 test('should set up remove expense action object', () => {
-    const action = removeExpanse({id: '123abc'});
+    const action = removeExpense({id: '123abc'});
 
     expect(action).toEqual({
         type: 'REMOVE_EXPENSE',

@@ -20,7 +20,7 @@ export const addExpense = (
 });
 
 // REMOVE_EXPENSE
-export const removeExpanse = ({ id } = {}) => ({
+export const removeExpense = ({ id } = {}) => ({
     type: 'REMOVE_EXPENSE',
     id
 });

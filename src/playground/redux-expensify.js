@@ -21,7 +21,7 @@ const addExpense = (
 });
 
 // REMOVE_EXPENSE
-const removeExpanse = ({ id } = {}) => ({
+const removeExpense = ({ id } = {}) => ({
     type: 'REMOVE_EXPENSE',
     id
 });
@@ -168,7 +168,7 @@ store.subscribe(() => {
 const expenseOne = store.dispatch(addExpense({ description: 'Rent', amount: 100, createdAt: -21000 }));
 const expenseTwo = store.dispatch(addExpense({ description: 'Coffee', amount: 300, createdAt: -1000 }));
 
-// store.dispatch(removeExpanse({ id: expenseOne.expense.id }));
+// store.dispatch(removeExpense({ id: expenseOne.expense.id }));
 
 // store.dispatch(editExense(expenseTwo.expense.id, { amount: 500 }));
 
